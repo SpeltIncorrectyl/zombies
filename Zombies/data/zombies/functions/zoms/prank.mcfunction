@@ -1,0 +1,3 @@
+summon minecraft:zombie ~ ~ ~ {CanBreakDoors:1b,ArmorItems:[{id:"minecraft:diamond_boots",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:thorns",lvl:100s}]}},{},{},{}],ArmorDropChances:[0.000F,0.085F,0.085F,0.085F],ActiveEffects:[{Id:20b,Amplifier:1b,Duration:2000,ShowParticles:0b}]}
+scoreboard players add @e[type=minecraft:zombie] spread 1
+execute at @a run spreadplayers ~ ~ 100 150 false @e[scores={spread=1}, type=minecraft:zombie]

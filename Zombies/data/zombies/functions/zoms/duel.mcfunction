@@ -1,0 +1,3 @@
+summon minecraft:zombie ~ ~ ~ {CanBreakDoors:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s}]}},{id:"minecraft:diamond_sword",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s}]}}],HandDropChances:[0.000F,0.000F],Attributes:[{Name:generic.movementSpeed,Base:0.25}]}
+scoreboard players add @e[type=minecraft:zombie] spread 1
+execute at @a run spreadplayers ~ ~ 100 150 false @e[scores={spread=1}, type=minecraft:zombie]
